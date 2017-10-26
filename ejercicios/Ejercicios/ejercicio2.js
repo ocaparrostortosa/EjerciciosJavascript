@@ -1,6 +1,11 @@
 function ejercicio2(){
   var dni = "77644840";
   var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+//
+  if(process.argv.length < 3){
+	console.log('Falta documento a analizar');
+	process.exit(1);
+  }
 //	
   function esDniCorrecto(){
 	  var numero
